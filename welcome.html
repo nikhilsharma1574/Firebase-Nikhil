@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wecome Page</title>    
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="text-white bg-black">
+    <div class="nav  m-5">
+        <div class="text">
+          <p id="user" class=" text-2xl font-semibold text-sky-400"></p>
+          <div class="success"><span id="login/signup">You are successfully logged in !!!</span></div>
+        </div>
+    </div>
+    <div class="flex justify-center items-center">
+        <form id="loginform1" onsubmit="senddata()" class="grid w-80 rounded p-6 center">
+            <span class=" flex justify-center text-3xl my-8">Fill Personal Details</span>
+            <span class="placeholder">Name</span>
+            <input id="Name" type="text" class="input rounded-md my-2 p-2 bg-gray-500 bg-opacity-20 focus:border outline-none focus:border-[#6290C8]" required />
+            <span class="placeholder">Age</span>
+            <input id="Age" type="text" class="input rounded-md my-2 p-2 bg-gray-500 bg-opacity-20 focus:border outline-none focus:border-[#6290C8]" required />
+            <span class="placeholder">Roll Number</span>
+            <input id="roll" type="text" class="input rounded-md my-2 p-2 bg-gray-500 bg-opacity-20 focus:border outline-none focus:border-[#6290C8]" required />
+            <button type="submit" class=" mx-3 my-6 bg-green-500 bg-opacity-50 py-2 px-4 rounded hover:bg-opacity-30 ">Submit</button>
+            <center> <span id="send_data" class=""></span> </center>
+        </form>
+    </div>
+    <div class="grid">
+     <button class="mx-3 my-6 bottom-0 justify-self-end py-2 px-4 inset-x-0 bottom-0 bg-red-500 rounded hover:bg-red-900 " onclick="logout()">Logout</button>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+
+    <script src="./firebase.js"></script>
+    <script src="./welcome.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wecome Page</title>    
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="text-white bg-black">
+    <div class="header text-3xl m-8 font-semibold">
+        <h1>Make your own Resume , like Never Before!!!</h1>
+    </div>
+    <div class="m-8">
+        <div class="show max-w-fit p-8 rounded-md data show bg-green-500">
+            <span>Name : </span><span id="firebase-name">Nikhil</span><br>
+            <span>Age : </span><span id="firebase-age">21</span><br>
+            <span>Roll Number : </span><span id="firebase-roll">10</span><br>
+            <span>Email : </span><span id="firebase-email"></span><br>
+            <span>UID : </span><span id="firebase-uid"></span>
+
+        </div>
+    </div>
+<button onclick=showmail() class="bg-red-500 p-4 font-semibold rounded-md">Show Mail</button>
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+    <script src="./firebase.js"></script>
+    <script src="./data.js"></script>
+</body>
+</html>

@@ -4,33 +4,33 @@
 html {
     scroll-behavior: smooth;
   }
-  
+
 .title-word {
   animation: color-animation 4s linear infinite;
 }
 
 .title-word-1 {
-  --color-1: #008e68;
-  --color-2: #3D8DAE;
-  --color-3: #004b66;
+  --color-1: #FFDF2B;
+  --color-2: #dfd400;
+  --color-3: #5a5a5a;
 }
 
 .title-word-2 {
-  --color-1: #004b66;
-  --color-2: #ACCFCB;
-  --color-3: #17494D;
+  --color-1: #FFDF2B;
+  --color-2: #5a5a5a;
+  --color-3: #FFDF2B;
 }
 
 .title-word-3 {
-  --color-1: #ACCFCB;
-  --color-2: #008e68;
-  --color-3: #ACCFCB;
+  --color-1: #5a5a5a;
+  --color-2: #FFDF2B;
+  --color-3: #8ea32f;
 }
 
 .title-word-4 {
-  --color-1: #3D8DAE;
-  --color-2: #008e68;
-  --color-3: #004b66;
+  --color-1: #5a5a5a;
+  --color-2: #e2ff3c;
+  --color-3: #FFDF2B;
 }
 
 @keyframes color-animation {

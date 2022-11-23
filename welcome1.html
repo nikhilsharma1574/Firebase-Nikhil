@@ -9,21 +9,26 @@
     <script src="https://kit.fontawesome.com/943cb5dbca.js" crossorigin="anonymous"></script>
     <link href='https://fonts.googleapis.com/css?family=Actor' rel='stylesheet'>
     <link href="./welcome1.css" rel="stylesheet">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body class="text-white snap-y snap-mandatory h-screen overflow-scroll">
-    <div id="page1" class="page1 h-screen snap-start text-white bg-cover" style="background-image: url(source/image/web2bg1.png);">
+    <div id="page1" class="page1 h-screen snap-start max-w-screen text-white bg-cover" style="background-image: url(source/image/web2bg1.png);">
+    <div button onclick="logout()" class="absolute right-0 m-6 text-black bg-red-500 hover:cursor-pointer rounded-md hover:bg-red-800 py-3 px-6 h-max w-max"><a href="#page2">Logout</a></button></div>
         <div class="p-6">
-            <div class="heading text-9xl m-8">We Build !!</div>
+            <img class="wow animate__animated animate__fadeInLeft h-20 m-6" src="./logo/TITLE.png">
+            <div class="heading text-9xl m-8 ">We Build !!</div>
             <div class="flex flex-row content2">
                 <div class="left basis-1/2 flex justify-center ">
-                    <div button class="animate-bounce bg-green-600 hover:cursor-pointer mt-48 rounded-md hover:bg-green-500 py-3 px-6 h-max w-max"><a href="#page2">Lets Start</a></button>
+                    <div button class="text-black bg-[#FFDF2B] font-bold hover:cursor-pointer mt-48 rounded-md hover:bg-[#B49900] py-3 px-6 h-max w-max"><a href="#page2">View more</a></button>
                     </div>
                 </div>
-                <div class="logo w-100 basis-1/2 bg-neutral-100 rounded-md bg-opacity-20 p-3">
-                    <p>Our team provides Students/developers to develope their resume</p><br>
-                    <p> jnjnj dnciwc oiowecn owic  cowiecn oiwc ewcin wocn wucbqhue c weu ciwecn9ipwec w keuc wec bi bri boijrn it expands, and get different <br>bits of it in repeated elements.24-Jan-2017it expands, and get different <br>it expands, and get different bits of it in repeated elements.24-Jan-2017it expands,<br> and get different bits of it in repeated elements.24-Jan-2017it2017<br>it expands, and get different bits of it in repeated elements.24-Jan-2017it expands, and get different bits of <br>it in repeated elements.24-Jan-2017it expands, and get different bits of it in repeated elements.24-Jan-2017it expands, and get different bits of it in repeated elements.24-Jan-2017it expands, and get different bits of it in repeated elements.24-Jan-2017it expands, and get different bits of it in repeated elements.24-Jan-2017it expands, and get different bits of it in repeated elements.24-Jan-2017</p>
-                </div>
+                <div class="absolute right-[200px] top-40 logo w-100 basis-1/2 rounded-md ">
+                    <img id="mobiless" class="wow mobiless h-[580px] animate__animated animate__fadeInRight" src="./source/image/mobilelogo.png">
+                 </div>
             </div>
+        </div>
+        <div class="absolute down w-full flex justify-center items-center  bottom-0">
+           <a href="#page2"><i class="fa-solid fa-2xl fa-arrow-down h-8 animate-bounce" style="color:#FFDF2B; "></i></a> 
         </div>
         </div>
         <div id="page2" class="page2 h-screen bg-black max-w-screen">
@@ -35,230 +40,93 @@
                   <span class="title-word title-word-4">now</span>
                 </h2>
               </div>
-              <div id="scroll" class="mt-12 p-6 m-8 flex gap-4 flex-no-wrap scrolling-touch items-start no-scrollbar overflow-x-scroll">
+              <div id="scroll" class="mt-12 p-6 m-8 flex gap-4 flex-no-wrap scrolling-touch items-start no-scrollbar overflow-x-scroll wow animate__animated animate__fadeInRight">
                 <!-- card start -->
-                <div class="card  m-6 flex-none w-60 p-2 rounded-xl bg-neutral-100 shadow-zinc-200">
+                <div class="card hover:-translate-y-1 hover:scale-110 duration-100 m-6 flex-none w-60 p-2 rounded-xl bg-neutral-100 shadow-zinc-200">
                     <img class="rounded-xl" src="/source/image/moon.jpg">
                     <div class="header font-bold p-2 text-lg text-black">
                         Header
                     </div>
                     <p class="para text-sm text-gray-600"> Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph </p>
-                    <div class="m-2"> <a class="bg-purple-600 px-3 py-1 rounded-md" role="button" href="#"class="">Learn more</a></div>
+                    <div class="m-2"> <a class="text-black bg-[#FFDF2B] px-3 py-1 rounded-md" role="button" href="#"class="">Learn more</a></div>
                 </div>
-                <div class="card m-6 flex-none w-60 p-2 rounded-xl bg-neutral-100 shadow-zinc-200">
+                <div class="card hover:-translate-y-1 hover:scale-110 duration-100 m-6 flex-none w-60 p-2 rounded-xl bg-neutral-100 shadow-zinc-200">
                     <img class="rounded-xl" src="/source/image/moon.jpg">
                     <div class="header font-bold p-2 text-lg text-black">
                         Header
                     </div>
                     <p class="para text-sm text-gray-600"> Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph </p>
-                    <div class="m-2"> <a class="bg-purple-600 px-3 py-1 rounded-md" role="button" href="#"class="">Learn more</a></div>
+                    <div class="m-2"> <a class="text-black bg-[#FFDF2B] px-3 py-1 rounded-md" role="button" href="#"class="">Learn more</a></div>
                 </div>
-                <div class="card m-6 flex-none w-60 p-2 rounded-xl bg-neutral-100 shadow-zinc-200">
+                <div class="card hover:-translate-y-1 hover:scale-110 duration-100 m-6 flex-none w-60 p-2 rounded-xl bg-neutral-100 shadow-zinc-200">
                     <img class="rounded-xl" src="/source/image/moon.jpg">
                     <div class="header font-bold p-2 text-lg text-black">
                         Header
                     </div>
                     <p class="para text-sm text-gray-600"> Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph </p>
-                    <div class="m-2"> <a class="bg-purple-600 px-3 py-1 rounded-md" role="button" href="#"class="">Learn more</a></div>
+                    <div class="m-2"> <a class="text-black bg-[#FFDF2B] px-3 py-1 rounded-md" role="button" href="#"class="">Learn more</a></div>
                 </div>
-                <div class="card m-6 flex-none w-60 p-2 rounded-xl bg-neutral-100 shadow-zinc-200">
+                <div class="card hover:-translate-y-1 hover:scale-110 duration-100 m-6 flex-none w-60 p-2 rounded-xl bg-neutral-100 shadow-zinc-200">
                     <img class="rounded-xl" src="/source/image/moon.jpg">
                     <div class="header font-bold p-2 text-lg text-black">
                         Header
                     </div>
                     <p class="para text-sm text-gray-600"> Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph </p>
-                    <div class="m-2"> <a class="bg-purple-600 px-3 py-1 rounded-md" role="button" href="#"class="">Learn more</a></div>
+                    <div class="m-2"> <a class="text-black bg-[#FFDF2B] px-3 py-1 rounded-md" role="button" href="#"class="">Learn more</a></div>
                 </div>
-                <div class="card m-6 flex-none w-60 p-2 rounded-xl bg-neutral-100 shadow-zinc-200">
+                <div class="card hover:-translate-y-1 hover:scale-110 duration-100 m-6 flex-none w-60 p-2 rounded-xl bg-neutral-100 shadow-zinc-200">
                     <img class="rounded-xl" src="/source/image/moon.jpg">
                     <div class="header font-bold p-2 text-lg text-black">
                         Header
                     </div>
                     <p class="para text-sm text-gray-600"> Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph </p>
-                    <div class="m-2"> <a class="bg-purple-600 px-3 py-1 rounded-md" role="button" href="#"class="">Learn more</a></div>
+                    <div class="m-2"> <a class="text-black bg-[#FFDF2B] px-3 py-1 rounded-md" role="button" href="#"class="">Learn more</a></div>
                 </div>
-                <div class="card m-6 flex-none w-60 p-2 rounded-xl bg-neutral-100 shadow-zinc-200">
+                <div class="card hover:-translate-y-1 hover:scale-110 duration-100 m-6 flex-none w-60 p-2 rounded-xl bg-neutral-100 shadow-zinc-200">
                     <img class="rounded-xl" src="/source/image/moon.jpg">
                     <div class="header font-bold p-2 text-lg text-black">
                         Header
                     </div>
                     <p class="para text-sm text-gray-600"> Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph </p>
-                    <div class="m-2"> <a class="bg-purple-600 px-3 py-1 rounded-md" role="button" href="#"class="">Learn more</a></div>
+                    <div class="m-2"> <a class="text-black bg-[#FFDF2B] px-3 py-1 rounded-md" role="button" href="#"class="">Learn more</a></div>
                 </div>
-                <div class="card m-6 flex-none w-60 p-2 rounded-xl bg-neutral-100 shadow-zinc-200">
+                <div class="card hover:-translate-y-1 hover:scale-110 duration-100 m-6 flex-none w-60 p-2 rounded-xl bg-neutral-100 shadow-zinc-200">
                     <img class="rounded-xl" src="/source/image/moon.jpg">
                     <div class="header font-bold p-2 text-lg text-black">
                         Header
                     </div>
                     <p class="para text-sm text-gray-600"> Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph </p>
-                    <div class="m-2"> <a class="bg-purple-600 px-3 py-1 rounded-md" role="button" href="#"class="">Learn more</a></div>
+                    <div class="m-2"> <a class="text-black bg-[#FFDF2B] px-3 py-1 rounded-md" role="button" href="#"class="">Learn more</a></div>
                 </div>
-                <div class="card m-6 flex-none w-60 p-2 rounded-xl bg-neutral-100 shadow-zinc-200">
+                <div class="card hover:-translate-y-1 hover:scale-110 duration-100 m-6 flex-none w-60 p-2 rounded-xl bg-neutral-100 shadow-zinc-200">
                     <img class="rounded-xl" src="/source/image/moon.jpg">
                     <div class="header font-bold p-2 text-lg text-black">
                         Header
                     </div>
                     <p class="para text-sm text-gray-600"> Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph </p>
-                    <div class="m-2"> <a class="bg-purple-600 px-3 py-1 rounded-md" role="button" href="#"class="">Learn more</a></div>
+                    <div class="m-2"> <a class="text-black bg-[#FFDF2B] px-3 py-1 rounded-md" role="button" href="#"class="">Learn more</a></div>
                 </div>
-                <div class="card m-6 flex-none w-60 p-2 rounded-xl bg-neutral-100 shadow-zinc-200">
+                <div class="card hover:-translate-y-1 hover:scale-110 duration-100 m-6 flex-none w-60 p-2 rounded-xl bg-neutral-100 shadow-zinc-200">
                     <img class="rounded-xl" src="/source/image/moon.jpg">
                     <div class="header font-bold p-2 text-lg text-black">
                         Header
                     </div>
                     <p class="para text-sm text-gray-600"> Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph </p>
-                    <div class="m-2"> <a class="bg-purple-600 px-3 py-1 rounded-md" role="button" href="#"class="">Learn more</a></div>
+                    <div class="m-2"> <a class="text-black bg-[#FFDF2B] px-3 py-1 rounded-md" role="button" href="#"class="">Learn more</a></div>
                 </div>
               </div>    
-              <!-- card end -->
-        </div>
-    <div id="page3" class="page2 snap-start flex h-screen bg-neutral-800">
-    <div class=" sidebar w-60 rounded-md">
-        <div class="sidebarcontent h-full">
-            <div class="sidebarhead p-6">
-                <img class="h-16" src="\logo\RECOVA.png">
+              <!-- card end --> 
+            <div class="start grid justify-center place-items-center">
+              <div button class="relative text-black bg-[#FFDF2B] font-bold hover:cursor-pointer m-6 rounded-md hover:bg-[#B49900] py-3 px-6 h-max w-max animate-pulse"><a href="#page2">Let's start</a></button>
+              </div>
             </div>
-          <ul class="bg-slate-500 hover:bg-neutral-700 p-3 transition delay-120 duration-270"><i class="fa-solid fa-house-user"></i><a class="px-3" href="#">Home</a></ul>
-          <ul class="bg-slate-500 hover:bg-neutral-700 p-3 transition delay-120 duration-270"><i class="fa-solid fa-file"></i><a class="px-3" href="#">Build Resume</a></ul>
-          <ul class="bg-slate-500 hover:bg-neutral-700 p-3 transition delay-120 duration-270"><i class="fa-solid fa-address-card"></i><a class="px-3" href="#">My profile</a></ul>
-          <ul class="bg-slate-500 hover:bg-neutral-700 p-3 transition delay-120 duration-270"><i class="fa-regular fa-square-check"></i><a class="px-3" href="#">Authentication</a></ul>
-          <ul class="bg-slate-500 hover:bg-neutral-700 p-3 transition delay-120 duration-270"><i class="fa-solid fa-play"></i><a class="px-3" href="#">Comming soon</a></ul>
-          <ul class="bg-slate-500 hover:bg-neutral-700 p-3 transition delay-120 duration-270"><i class="fa-solid fa-house-user"></i><a class="px-3" href="#">Find Company</a></ul>
-          <ul class="bg-slate-500 hover:bg-neutral-700 p-3 transition delay-120 duration-270"><i class="fa-solid fa-envelope"></i><a class="px-3" href="#">Tweet</a></ul>
-          <ul class="bg-slate-500 hover:bg-neutral-700 p-3 transition delay-120 duration-270"><i class="fa-solid fa-tv"></i><a class="px-3" href="#">Clips</a></ul>
-          <ul class="bg-slate-500 hover:bg-neutral-700 p-3 transition delay-120 duration-270"><i class="fa-solid fa-id-badge"></i><a class="px-3" href="#">Contact Developer</a></ul>
         </div>
+    <div id="footer" class="footer relative bg-neutral-800">
+            <div class="upper text-center justify-center place-items-center p-6 text-sm space-y-4">
+                <h1><i class="fa-solid fa-laptop-code"></i> Developer - Nikhil Sharma | <i class="fa-solid fa-building-columns"></i> SRM University . Chennai | <i class="fa-solid fa-envelope"></i> nikhilsharma1574@gmail.com</h1>
+                <h1><i class="fa-brands fa-github"></i> Github - github/nikhilsharma1574 | <i class="fa-brands fa-linkedin"></i> Linkdin - linkdin/nikhil.shaarrma | <i class="fa-brands fa-instagram"></i> Instagram - nikhil.shaarrma</h1>
+            </div>
     </div>
-    <div class="absolute main m-2 right-6 top-1"><button class="hover:bg-red-700 transition delay-120 duration-270 bg-red-500 px-6 py-2 rounded-md" onclick=logout() >Logout</button></div>
-    <div class="mainbody bg-neutral-600 rounded-md flex flex-row my-20 h-[600px] p-6 mx-8 w-full">
-        <div class="text overflow-auto scrollbar-hide basis-1/2 p-4">
-            it expands, and get different bits of it in repeated elements.24-Jan-2017it expands, and get different bits of it in repeated elements.24-Jan-2017it expands, and get different bits of it in repeated elements.24-Jan-2017it expands, and get different bits of it in repeated elements.24-Jan-2017it expands, and get different bits of it in repeated elements.24-Jan-2017it expands, and get different bits of it in repeated elements.24-Jan-2017it expands, and get different bits of it in repeated elements.24-Jan-2017
-            <br>
-            <br>
-            it expands, and get different bits of it in repeated elements.24-Jan-2017it expands, and get different bits of it in repeated elements.24-Jan-2017it expands, and get different bits of it in repeated elements.24-Jan-2017it expands, and get different bits of it in repeated elements.24-Jan-2017it expands, and get different bits of it in repeated elements.24-Jan-2017it expands, and get different bits of it in repeated elements.24-Jan-2017it expands, and get different bits of it in repeated elements.24-Jan-2017
-            <br>
-            it expands, and get different bits of it in repeated elements.24-Jan-2017it expands, and get different bits of it in repeated elements.24-Jan-2017it expands, and get different bits of it in repeated elements.24-Jan-2017it expands, and get different bits of it in repeated elements.24-Jan-2017it expands, and get different bits of it in repeated elements.24-Jan-2017it expands, and get different bits of it in repeated elements.24-Jan-2017it expands, and get different bits of it in repeated elements.24-Jan-2017
-            <br><br>
-            it expands, and get different bits of it in repeated elements.24-Jan-2017it expands, and get different bits of it in repeated elements.24-Jan-2017it expands, and get different bits of it in repeated elements.24-Jan-2017it expands, and get different bits of it in repeated elements.24-Jan-2017it expands, and get different bits of it in repeated elements.24-Jan-2017it expands, and get different bits of it in repeated elements.24-Jan-2017it expands, and get different bits of it in repeated elements.24-Jan-2017
-            <br>
-            
-            it expands, and get different bits of it in repeated elements.24-Jan-2017it expands, and get different bits of it in repeated elements.24-Jan-2017it expands, and get different bits of it in repeated elements.24-Jan-2017it expands, and get different bits of it in repeated elements.24-Jan-2017it expands, and get different bits of it in repeated elements.24-Jan-2017it expands, and get different bits of it in repeated elements.24-Jan-2017it expands, and get different bits of it in repeated elements.24-Jan-2017
-            <br><br>
-            it expands, and get different bits of it in repeated elements.24-Jan-2017it expands, and get different bits of it in repeated elements.24-Jan-2017it expands, and get different bits of it in repeated elements.24-Jan-2017it expands, and get different bits of it in repeated elements.24-Jan-2017it expands, and get different bits of it in repeated elements.24-Jan-2017it expands, and get different bits of it in repeated elements.24-Jan-2017it expands, and get different bits of it in repeated elements.24-Jan-2017
-            <br>
-        </div>
-        <div class="pic basis-1/2 grid justify-items-stretch">
-            <div class="relative w-full mx-auto ">
-                <div class="slide relative">
-                    <img class="w-full h-[500px] object-cover"
-                        src=".\source\image\S20Fe wallpaper.jpg">
-                </div>
-                <div class="slide relative">
-                    <img class="w-full h-[500px] object-cover"
-                        src=".\source\image\moon.jpg">
-                    <div class="absolute bottom-0 w-full px-5 py-3 bg-black/40 text-center text-white">Flower Two Caption</div>
-                </div>
-        
-                <div class="slide relative">
-                    <img class="w-full h-[500px] object-cover"
-                        src=".\source\image\legion.jpg">
-                    <div class="absolute bottom-0 w-full px-5 py-3 bg-black/40 text-center text-white">Flower Three Caption
-                    </div>
-                </div>
-        
-                <!--previous button -->
-                <a class="absolute left-0 top-1/2 p-4 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white hover:text-amber-500 cursor-pointer"
-                    onclick="moveSlide(-1)">❮</a>
-        
-                <!--next button -->
-                <a class="absolute right-0 top-1/2 p-4 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white hover:text-amber-500 cursor-pointer"
-                    onclick="moveSlide(1)">❯</a>
-            <br>
-        
-            <div class="flex justify-center items-center space-x-5">
-                <div class="dot w-4 h-4 rounded-full cursor-pointer" onclick="currentSlide(1)"></div>
-                <div class="dot w-4 h-4 rounded-full cursor-pointer" onclick="currentSlide(2)"></div>
-                <div class="dot w-4 h-4 rounded-full cursor-pointer" onclick="currentSlide(3)"></div>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-<div class="page4 snap-start h-screen w-full bg-neutral-600">
-        <div id="scroll" class="bg-green-500 w-full flex gap-4 flex-no-wrap scrolling-touch items-start no-scrollbar overflow-x-scroll">
-            <div class="card  m-6 flex-none w-60 p-2 rounded-xl bg-neutral-100 shadow-zinc-200">
-                <img class="rounded-xl" src="/source/image/moon.jpg">
-                <div class="header font-bold p-2 text-lg text-black">
-                    Header
-                </div>
-                <p class="para text-sm text-gray-600"> Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph </p>
-                <div class="m-2"> <a class="bg-purple-600 px-3 py-1 rounded-md" role="button" href="#"class="">Learn more</a></div>
-            </div>
-            <div class="card m-6 flex-none w-60 p-2 rounded-xl bg-neutral-100 shadow-zinc-200">
-                <img class="rounded-xl" src="/source/image/moon.jpg">
-                <div class="header font-bold p-2 text-lg text-black">
-                    Header
-                </div>
-                <p class="para text-sm text-gray-600"> Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph </p>
-                <div class="m-2"> <a class="bg-purple-600 px-3 py-1 rounded-md" role="button" href="#"class="">Learn more</a></div>
-            </div>
-            <div class="card m-6 flex-none w-60 p-2 rounded-xl bg-neutral-100 shadow-zinc-200">
-                <img class="rounded-xl" src="/source/image/moon.jpg">
-                <div class="header font-bold p-2 text-lg text-black">
-                    Header
-                </div>
-                <p class="para text-sm text-gray-600"> Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph </p>
-                <div class="m-2"> <a class="bg-purple-600 px-3 py-1 rounded-md" role="button" href="#"class="">Learn more</a></div>
-            </div>
-            <div class="card m-6 flex-none w-60 p-2 rounded-xl bg-neutral-100 shadow-zinc-200">
-                <img class="rounded-xl" src="/source/image/moon.jpg">
-                <div class="header font-bold p-2 text-lg text-black">
-                    Header
-                </div>
-                <p class="para text-sm text-gray-600"> Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph </p>
-                <div class="m-2"> <a class="bg-purple-600 px-3 py-1 rounded-md" role="button" href="#"class="">Learn more</a></div>
-            </div>
-            <div class="card m-6 flex-none w-60 p-2 rounded-xl bg-neutral-100 shadow-zinc-200">
-                <img class="rounded-xl" src="/source/image/moon.jpg">
-                <div class="header font-bold p-2 text-lg text-black">
-                    Header
-                </div>
-                <p class="para text-sm text-gray-600"> Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph </p>
-                <div class="m-2"> <a class="bg-purple-600 px-3 py-1 rounded-md" role="button" href="#"class="">Learn more</a></div>
-            </div>
-            <div class="card m-6 flex-none w-60 p-2 rounded-xl bg-neutral-100 shadow-zinc-200">
-                <img class="rounded-xl" src="/source/image/moon.jpg">
-                <div class="header font-bold p-2 text-lg text-black">
-                    Header
-                </div>
-                <p class="para text-sm text-gray-600"> Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph </p>
-                <div class="m-2"> <a class="bg-purple-600 px-3 py-1 rounded-md" role="button" href="#"class="">Learn more</a></div>
-            </div>
-            <div class="card m-6 flex-none w-60 p-2 rounded-xl bg-neutral-100 shadow-zinc-200">
-                <img class="rounded-xl" src="/source/image/moon.jpg">
-                <div class="header font-bold p-2 text-lg text-black">
-                    Header
-                </div>
-                <p class="para text-sm text-gray-600"> Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph </p>
-                <div class="m-2"> <a class="bg-purple-600 px-3 py-1 rounded-md" role="button" href="#"class="">Learn more</a></div>
-            </div>
-            <div class="card m-6 flex-none w-60 p-2 rounded-xl bg-neutral-100 shadow-zinc-200">
-                <img class="rounded-xl" src="/source/image/moon.jpg">
-                <div class="header font-bold p-2 text-lg text-black">
-                    Header
-                </div>
-                <p class="para text-sm text-gray-600"> Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph </p>
-                <div class="m-2"> <a class="bg-purple-600 px-3 py-1 rounded-md" role="button" href="#"class="">Learn more</a></div>
-            </div>
-            <div class="card m-6 flex-none w-60 p-2 rounded-xl bg-neutral-100 shadow-zinc-200">
-                <img class="rounded-xl" src="/source/image/moon.jpg">
-                <div class="header font-bold p-2 text-lg text-black">
-                    Header
-                </div>
-                <p class="para text-sm text-gray-600"> Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph </p>
-                <div class="m-2"> <a class="bg-purple-600 px-3 py-1 rounded-md" role="button" href="#"class="">Learn more</a></div>
-            </div>
-        </div>
     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
@@ -266,5 +134,9 @@
     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
     <script src="./firebase.js"></script>
     <script src="./welcome1.js"></script>
+    <script src="./wow.min.js"></script>
+    <script>
+            new WOW().init();
+    </script>
 </body>
 </html>

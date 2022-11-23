@@ -25,11 +25,10 @@
             <span class="placeholder">Roll Number</span>
             <input id="roll" type="text" class="input rounded-md my-2 p-2 bg-gray-500 bg-opacity-20 focus:border outline-none focus:border-[#6290C8]" required />
             <button type="submit" class=" mx-3 my-6 bg-green-500 bg-opacity-50 py-2 px-4 rounded hover:bg-opacity-30 ">Submit</button>
-            <center> <span id="send_data" class=""></span> </center>
+            <button class="mx-3 my-6 bg-red-500 bg-opacity-50 py-2 px-4 rounded hover:bg-opacity-30 " onclick="logout()">Logout</button>
         </form>
     </div>
     <div class="grid">
-     <button class="mx-3 my-6 bottom-0 justify-self-end py-2 px-4 inset-x-0 bottom-0 bg-red-500 rounded hover:bg-red-900 " onclick="logout()">Logout</button>
     </div>
     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>

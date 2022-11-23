@@ -3,11 +3,11 @@ document.getElementById("loginForm").addEventListener("submit",(event)=>{
 })
 var global;
 
-firebase.auth().onAuthStateChanged((user)=>{
-    if(user){
-        location.replace("welcome.html")
-    }
-})
+// firebase.auth().onAuthStateChanged((user)=>{
+//     if(user){
+//         location.replace("welcome.html")
+//     }
+// })
 
 function login(){
     const email = document.getElementById("email").value
@@ -15,6 +15,11 @@ function login(){
     firebase.auth().signInWithEmailAndPassword(email, password).then(console.log("logged in"))
     .catch((error)=>{
         document.getElementById("error").innerHTML = error.message
+    })
+    firebase.auth().onAuthStateChanged((user)=>{
+        if(user){
+            location.replace("./welcome1.html")
+        }
     })
 }
 

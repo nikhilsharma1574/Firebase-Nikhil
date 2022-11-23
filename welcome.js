@@ -67,4 +67,8 @@ function update(){
 //    });
 console.log(uid);
 }
+function senddata(){
+    console.log("sending...");
+    location.replace("welcome1.html");
+}
 

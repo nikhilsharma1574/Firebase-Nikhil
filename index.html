@@ -8,22 +8,22 @@
         <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     </head>
-    <body class="bg-black"style="background-image: url(source/image/web2bg1.png);">
+    <body class="sm:max-w-screen md:max-w-screen bg-black"style="background-image: url(source/image/web2bg1.png);">
         <!-- <div class="text-white underline decoration-solid flex relative p-2 center place-content-center">
             <div class="px-4 mt-6 mx-6 cursor-pointer">Home</div>
             <div class="px-4 mt-6 mx-6 cursor-pointer">About</div>
             <div class="px-4 mt-6 mx-6 cursor-pointer">Dashboard</div>
             <div class="px-4 mt-6 mx-6 cursor-pointer">Contact us</div>
         </div> -->
-    <div class="flex gap-40 justify-center items-center text-white h-screen p-5">
-        <div class="wow animate__animated animate__fadeIn justify-center logo basis-1/2 p-6">
-            <img class="h-74" src="./logo/TITLE.png">
+    <div class="sm:flex justify-center items-center text-white h-screen sm:max-w-screen">
+        <div class="sm:justify-center wow animate__animated animate__fadeIn justify-center logo basis-1/2 p-6">
+            <img class="static sm:h-12 md:h-32 lg:h-60" src="./logo/TITLE.png">
         </div>
-        <div class="wow animate__animated animate__fadeInRight card w-96 shadow-xl rounded-md bg-black bg-opacity-80">
-            <div class="card-header text-5xl p-6">
+        <div class="wow animate__animated animate__fadeInRight card md:w-96 m-6 shadow-xl p-4 rounded-md bg-black bg-opacity-80">
+            <div class="card-header text-2xl md:text-5xl p-6">
                 <center><h3>Login / Sign-up</h3></center>
             </div>
-            <form onsubmit="login()" id="loginForm" class="card-body px-5 py-4">
+            <form onsubmit="login()" id="loginForm" class="card-body md:px-5 md:py-4">
                 <center><small><span id="error" style="color: red"></span></small></center>
                 <center><label class="custom-field">
                     <div class="flex flex-col text-left">

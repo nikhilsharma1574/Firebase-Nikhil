@@ -2,13 +2,7 @@ document.getElementById("loginForm").addEventListener("submit",(event)=>{
     event.preventDefault()
 })
 var global;
-
-// firebase.auth().onAuthStateChanged((user)=>{
-//     if(user){
-//         location.replace("welcome.html")
-//     }
-// })
-
+firebase.auth().currentUser.uid;
 function login(){
     const email = document.getElementById("email").value
     const password = document.getElementById("password").value
@@ -23,27 +17,41 @@ function login(){
     })
 }
 
-function signUp(){
-
-     const email = document.getElementById("email").value
-     const password = document.getElementById("password").value
-     global=email;
-     firebase.auth().createUserWithEmailAndPassword(email, password)
-     .catch((error) => {
-         document.getElementById("error").innerHTML = error.message
-     });
-     console.log("Hey");
-
-     db.collection("Users").doc(global).set({
-         Email: email,
+function signup(){
+       
+    const email = document.getElementById("email").value
+    const password = document.getElementById("password").value
+    firebase.auth().createUserWithEmailAndPassword(email, password).then(console.log("Created"))
+    .catch((error)=>{
+        document.getElementById("error").innerHTML = error.message
     })
-    .then(() => {
-         console.log("Document successfully written!");
+    firebase.auth().onAuthStateChanged((user)=>{
+        if(user){
+            location.replace("./signup.html")
+        }
     })
-    .catch((error) => {
-         console.error("Error writing document: ", error);
-    });
-console.log("hi");
+
+
+
+//      const email = document.getElementById("email").value
+//      const password = document.getElementById("password").value
+//      global=email;
+//      firebase.auth().createUserWithEmailAndPassword(email, password)
+//      .catch((error) => {
+//          document.getElementById("error").innerHTML = error.message
+//      });
+//      console.log("Hey");
+
+//      db.collection("Users").doc(global).set({
+//          Email: email,
+//     })
+//     .then(() => {
+//          console.log("Document successfully written!");
+//     })
+//     .catch((error) => {
+//          console.error("Error writing document: ", error);
+//     });
+// console.log("hi");
 }
 
 var db = firebase.firestore();

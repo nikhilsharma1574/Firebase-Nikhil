@@ -23,7 +23,7 @@
             <div class="card-header text-2xl md:text-5xl p-6">
                 <center><h3>Login / Sign-up</h3></center>
             </div>
-            <form onsubmit="login()" id="loginForm" class="card-body md:px-5 md:py-4">
+            <form id="loginForm" class="card-body md:px-5 md:py-4">
                 <center><small><span id="error" style="color: red"></span></small></center>
                 <center><label class="custom-field">
                     <div class="flex flex-col text-left">
@@ -39,8 +39,8 @@
                 </label></center>
                 <a href="#" onclick="forgotPass()">Forgot Password</a>
                 <center>
-                    <button type="submit" class="mx-3 my-6 bg-green-500 bg-opacity-50 py-2 px-4 rounded hover:bg-opacity-30">Login</button>
-                    <button onclick="signUp()" class=" mx-3 my-6 bg-sky-500 bg-opacity-50 py-2 px-4 rounded hover:bg-opacity-30 ">Sign Up</button>
+                    <button onclick="login()" type="submit" class="mx-3 my-6 bg-green-500 bg-opacity-50 py-2 px-4 rounded hover:bg-opacity-30">Login</button>
+                    <button onclick="signup()" type="submit" class="mx-3 my-6 bg-green-500 bg-opacity-50 py-2 px-4 rounded hover:bg-opacity-30">signup</button>
                 </center>
             </form>
         </div>
@@ -52,7 +52,6 @@
         <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
         <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
         <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
-
         <script src="./firebase.js"></script>
         <script src="./index.js"></script>
         <script src="./wow.min.js"></script>

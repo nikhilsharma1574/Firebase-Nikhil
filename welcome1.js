@@ -1,43 +1,64 @@
-var global;
+var id;  
     firebase.auth().onAuthStateChanged((user)=>{
         if(!user){
             location.replace("index.html")
         }
+id = firebase.auth().currentUser.uid;
+var db = firebase.firestore()
+var docRef = db.collection("Users").doc(id);
+docRef.get().then((doc) => {
+          if (doc.exists) {
+              console.log("Document data:", doc.data());
+              document.getElementById("welcome_nam").innerHTML=doc.data().Name;
+          } else {
+              console.log("No such document!");
+          }
+      }).catch((error) => {
+          console.log("Error getting document:", error);
+      });
+      console.log(doc.data());
+      
+
+      var docRef = db.collection("Users").doc(id);
     })
+
 function logout(){
-    firebase.auth().signOut()
+  let id = firebase.auth().currentUser.uid;
+  console.log(id)
+    firebase.auth().signOut();
 }
 
-let slideIndex = 1;
-showSlide(slideIndex);
-
-function moveSlide(moveStep) {
-    showSlide(slideIndex += moveStep);
+function uid(){
+   console.log("view")
+   let id = firebase.auth().currentUser.uid
+   console.log(id)
+//    let id = firebase.auth().currentUser.uid;
+//    var db = firebase.firestore()
+//    var docRef = db.collection("Users").doc(id);
+//    docRef.get().then((doc) => {
+//      if (doc.exists) {
+//          console.log("Document data:", doc.data());
+//      } else {
+//          console.log("No such document!");
+//      }
+//  }).catch((error) => {
+//      console.log("Error getting document:", error);
+//  });
 }
 
-function currentSlide(n) {
-    showSlide(slideIndex = n);
-}
 
-function showSlide(n) {
-    let i;
-    const slides = document.getElementsByClassName("slide");
-    const dots = document.getElementsByClassName('dot');
-    
-    if (n > slides.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slides.length }
 
-    for (i = 0; i < slides.length; i++) {
-        slides[i].classList.add('hidden');
-    }
 
-    for (i = 0; i < dots.length; i++) {
-        dots[i].classList.remove('bg-yellow-500');
-        dots[i].classList.add('bg-green-600');
-    }
 
-    slides[slideIndex - 1].classList.remove('hidden');
+var box0= document.getElementById("box0")
+var box1= document.getElementById("box1")
+var box2= document.getElementById("box2")
+var box3= document.getElementById("box3")
+var box4= document.getElementById("box4")
+var box5= document.getElementById("box5")
+var box6= document.getElementById("box6")
+var box7= document.getElementById("box7")
+var box8= document.getElementById("box8")
 
-    dots[slideIndex - 1].classList.remove('bg-green-600');
-    dots[slideIndex - 1].classList.add('bg-yellow-500');
-}
+let name = document.getElementById("name").innerHTML="Nikhil";
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body class="bg-zinc-700">
+    <img class="wow animate__animated animate__fadeInLeft h-14 md:h-20 m-6" src="./logo/TITLE.png">
+    <div class="grid main">
+        <div id="loginForm" class="form flex bg-zinc-800 rounded-md p-10 mt-12 mx-12" onsubmit="send_initial_data()">
+            <div class="left grid gap-4 text-white">
+                <ul>Name </ul>
+                <ul>Age </ul>
+                <ul>Contact number </ul>
+                <ul>Email </ul>
+                <ul>Branch </ul>
+                <ul>Upload profile pic </ul>
+            </div>
+            <div class="right grid gap-4 font-semibold">
+                <input type="text" id="name" class="ml-8 rounded-sm "><br>
+                <input type="number" id="age" class="ml-8 rounded-sm"><br>
+                <input type="tel" id="contact" class="ml-8 rounded-sm"><br>
+                <input type="email" id="email"class="ml-8 rounded-sm"><br>
+                <input type="text" id="branch"class="ml-8 rounded-sm"><br>
+                <input type="file" id="profile_pic"class="ml-8 rounded-sm"><br>
+            </div> 
+        </div>
+        <div class="btn  flex justify-center">
+            <button id="submit-data" onclick="next()"class="bg-green-500 w-fit m-6 px-6 py-2 rounded-md bg-[#FFDF2B]">Next</button>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+    <script src="./firebase.js"></script>
+    <script src="./signup.js"></script>
+    <script src="./wow.min.js"></script>
+<script>
+        new WOW().init();
+</script>
+</body>
+</html>
